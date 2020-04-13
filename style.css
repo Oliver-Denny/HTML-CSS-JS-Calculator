@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+.btn-num, .btn-func, .btn-func-AC, .btn-equals {
+background-color: silver;
+color: black;
+height: 45px;
+width: 50px;
+text-align: center;
+border: 1px solid gray;
+cursor: pointer;
+font-size: 32px;
+font-weight: 100;
+padding-top: 3px;
+}
+.btn-num:hover {
+    background-color: orange;
+    font: bold;
+}
+.btn-func:hover, .btn-func-AC:hover {
+    background-color: blue;
+    color: whitesmoke;
+    font: bold;
+}
+.btn-operator {
+    background-color: orange;
+    color: black;
+    height: 45px;
+    width: 50px;
+    text-align: center;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 100;
+    padding-top: 3px;
+}
+.btn-operator:hover {
+    background-color: blue;
+    color: whitesmoke;
+}
+.btn-equals:hover {
+    background-color:greenyellow;
+    color: black;
+}
+.row {
+    display: table;
+    table-layout: fixed;
+    width: 200px;
+}
+.column {
+    display: table-cell;
+}
+#display {
+    background-color: darkslategrey;
+    height: 55px;
+    padding: 4px;
+    color: whitesmoke;
+    font-size: 46px;
+    text-align: right;
+    border-left: 1px gray;
+    border-top: 1px gray;
+    border-right: 1px gray;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 7px 7px 0 0;
+}
+.btn-func-AC {
+    border-radius: 0 0 0 7px;
+}
+.btn-equals {
+    border-radius: 0 0 7px 0;
+}
+h1 {
+    text-align: center;
+}
+#calculator {
+    margin-left: calc(50% - 100px);
+}
+.clear {
+background-color: silver;
+color: black;
+height: 45px;
+width: 102px;
+text-align: center;
+border: 1px solid gray;
+cursor: pointer;
+font-size: 32px;
+font-weight: 100;
+padding-top: 3px;
+}
