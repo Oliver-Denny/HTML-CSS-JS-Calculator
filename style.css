@@ -84,15 +84,3 @@ h1 {
 #calculator {
     margin-left: calc(50% - 100px);
 }
-.clear {
-background-color: silver;
-color: black;
-height: 45px;
-width: 102px;
-text-align: center;
-border: 1px solid gray;
-cursor: pointer;
-font-size: 32px;
-font-weight: 100;
-padding-top: 3px;
-}
