@@ -20,6 +20,7 @@ let getmultiply = document.getElementById('multiply');
 let getminus = document.getElementById('minus');
 let getadd = document.getElementById('add');
 let getequals = document.getElementById('equals');
+let getsqrt = document.getElementById('sqrt');
 
 let decimal = getdecimal.innerHTML
 let zero = getzero.innerHTML
@@ -37,6 +38,7 @@ let minus = getminus.innerHTML
 let multiply = getmultiply.innerHTML
 let divide = "/"
 let sqrd = getsqrd.innerHTML
+let sqrt = getsqrt.innerHTML
 
 function check(btn) {
     console.log(btn);
@@ -182,10 +184,17 @@ getsqrd.addEventListener("click", function() {
     displayval = "";
     displayval = (sum[0] * sum[0])
     displayval = displayval.toString();
-    sum = 0;
+    sum = [];
     updatedisplay();
 })
-
+getsqrt.addEventListener("click", function() {
+    sum.push(parseFloat(displayval))
+    displayval = "";
+    displayval = Math.sqrt(sum[0]);
+    displayval = displayval.toString();
+    sum = [];
+    updatedisplay();
+})
 function getnum(operator) {
     return parseFloat(displayval.indexOf(operator)) + 1
 }
@@ -225,4 +234,3 @@ getequals.addEventListener("click", function() {
         updatedisplay();
     }
 })
-
